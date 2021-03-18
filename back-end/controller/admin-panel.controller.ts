@@ -1,9 +1,9 @@
-
+//Admin Functions Typescript 
 import { RequestHandler } from 'express';
 
 const client = require("../config/prisma-config");
 
-//PROJECT
+//PROJECT 
 export const createProject: RequestHandler = async (req, res, next) =>{
     try {
       const newName:String = req.body.name;

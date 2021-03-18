@@ -6,14 +6,14 @@ const router = require('express').Router();
 
 
 //Project 
-router.get('/', getAllProjects);
+router.get('/', getAllProjects); //Found on the user controller
 router.post('/', createProject);
 router.put('/:id', updateProject);
 router.delete('/:id', deleteProject);
 router.get('/:id', findProject);
 
 
-//Update add a technology to a project 
+//Connect a technology to a project 
 router.post('/:id/technology', updateProjectTechnologies); 
 
 module.exports = router;

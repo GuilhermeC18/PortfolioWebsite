@@ -1,5 +1,8 @@
+//Image Upload
+
 const multer = require('multer');
 
+//Folder where to store and file naming. 
 const storage = multer.diskStorage({
 	destination: function (req, file, cb) {
 		cb(null, './uploads');
@@ -9,11 +12,12 @@ const storage = multer.diskStorage({
 	},
 });
 
+
 exports.uploadImage = multer({
 	storage: storage,
 	fileFilter: (req, file, cb) => {
 		console.log(file.mimetype == 'image/jpeg');
-		if (
+		if ( //formats acepted 
 			file.mimetype == 'image/png' ||
 			file.mimetype == 'image/jpg' ||
 			file.mimetype == 'image/jpeg' ||

@@ -38,7 +38,7 @@ var __generator = (this && this.__generator) || function (thisArg, body) {
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.updateProjectTechnologies = exports.deleteTechnology = exports.updateTechnology = exports.getAllTechnologies = exports.createTechnology = exports.findProject = exports.deleteProject = exports.updateProject = exports.createProject = void 0;
 var client = require("../config/prisma-config");
-//PROJECT
+//PROJECT 
 var createProject = function (req, res, next) { return __awaiter(void 0, void 0, void 0, function () {
     var newName, newDate, newDescription, newLink, createdProject, err_1;
     return __generator(this, function (_a) {

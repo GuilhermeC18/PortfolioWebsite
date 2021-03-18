@@ -2,6 +2,7 @@ const { getAllProjects, findProjectsByTech } = require('../controller/user-panel
 
 const router = require('express').Router();
 
+
 router.get('/', getAllProjects);
 router.get('/technology/:technologyId', findProjectsByTech);
 
