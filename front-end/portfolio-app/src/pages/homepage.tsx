@@ -11,9 +11,6 @@ import { Footer } from '../components/footer';
 //hooks 
 import { useState } from 'react';
 
-//image
-import Me from "../assets/me/me2.png";
-
 //grain 
 import Grain from "../assets/noise/noise.png";
 

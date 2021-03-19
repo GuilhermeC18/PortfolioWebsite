@@ -15,11 +15,11 @@ import {
 
 //Pages
 import Homepage from './pages/homepage';
-import {AboutMe} from './pages/about';
-import Contact from './pages/contact';
+import {AboutMe} from './pages/about/about';
+import Contact from './pages/contact/contact';
 import ProjectsPage from './pages/projects';
 import Login from './pages/login';
-import AdminDashboard from './pages/adminDashboard';
+import AdminDashboard from './pages/admin/adminDashboard';
 import ErrorBoundary from './pages/errorBoundary';
 
 //Typescript interface model 
@@ -29,6 +29,7 @@ export const App:React.FC = () => {
   const [Projects, setProjects] = useState<ProjectsModel[]>([]);
   const [error, setError] = useState("");
   
+  //Fetching Projects from backend 
   useEffect(()=>{
     fetch('/api/user/')
       .then(res => res.json())
