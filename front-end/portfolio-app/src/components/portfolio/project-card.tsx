@@ -73,7 +73,7 @@ const ImgMediaCard: React.FC<ProjectProps> = ({Project})  => {
         <CardMedia
           component="img"
           alt={Project?.name}
-          height="340"
+          height="360"
           image={`/api/${Project?.images[0]?.image_link}`}
           title={Project?.name}
         />

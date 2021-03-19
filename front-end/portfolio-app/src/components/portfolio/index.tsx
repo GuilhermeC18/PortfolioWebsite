@@ -83,11 +83,14 @@ const PortfolioPreview: React.FC<ProjectsProps> = ({Projects}) => {
     return (
         <>  
            <Title>Projects</Title>
-           <ProjectGrid>
+           
              {Projects &&
-             <ImgMediaCard Project={Projects[0]} />
+             <ProjectGrid>
+               <ImgMediaCard Project={Projects[0]} />
+               <ImgMediaCard Project={Projects[1]} />
+             </ProjectGrid>
              }
-           </ProjectGrid>
+           
             <StyledLink to="/projects">
                <p>Click to See All Projects...</p>
              </StyledLink>
