@@ -1,44 +1,17 @@
 import styled from 'styled-components';
-import {FaTimes} from 'react-icons/fa';
+import { FaTimes } from 'react-icons/fa';
 import  { NavLink as Link } from 'react-router-dom';
 
 
 //grain 
 import Grain from "../../assets/noise/noise.png";
 
-export const SidebarStyle = styled.div`
-
-@keyframes grain {
-    0%, 100% { transform:translate(0, 0) }
-    10% { transform:translate(-5%, -10%) }
-    20% { transform:translate(-15%, 5%) }
-    30% { transform:translate(7%, -25%) }
-    40% { transform:translate(-5%, 25%) }
-    50% { transform:translate(-15%, 10%) }
-    60% { transform:translate(15%, 0%) }
-    70% { transform:translate(0%, 15%) }
-    80% { transform:translate(3%, 35%) }
-    90% { transform:translate(-10%, 10%) }
-  }
-   &:after {
-     content:"";
-     background-image: url(${Grain});
-     height: 300%;
-     width: 300%;
-     opacity: 0.3;
-     position: fixed;
-     top: -100%;
-     left: -50%;
-     animation: grain 8s steps(10) infinite;
-   }
-`
-
 export const SidebarContainer = styled.aside`
   position: fixed; 
   z-index: ${({ isOpen}) => (isOpen ? '998' : '0')};
   width: 100%;
-  heigth: 100%; 
-  background-color: #d4d4d4;
+  height: 100%;
+  background-color: #212121 ;
   display: grid; 
   align-items: center; 
   left: 0;
@@ -72,8 +45,13 @@ export const SidebarContainer = styled.aside`
 `;
 
   export const CloseIcon = styled(FaTimes)`
-    color: #fff; 
-  ` 
+    color: white; 
+    cursor: pointer; 
+    &:hover {
+      color: grey;
+      transition: 0.2s ease-in-out; 
+    }
+  `; 
 
   export const Icon = styled.div`
     position: absolute; 
@@ -86,7 +64,7 @@ export const SidebarContainer = styled.aside`
   `
 
   export const SidebarWrapper = styled.div`
-    color: #fff;
+    color: black;
   `;
 
   export const SidebarLink = styled(Link)`
@@ -101,10 +79,10 @@ export const SidebarContainer = styled.aside`
     text-decoration: none;
     cursor: pointer; 
     &:visited {
-         color: #fff;
+         color: white;
         }
     &:hover {
-        color: #fff;
+        color: grey;
         transition: 0.2s ease-in-out; 
     }
 

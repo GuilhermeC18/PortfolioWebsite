@@ -15,11 +15,14 @@ export const NavLink = styled(Link)`
   color: #fff;
   display: flex;
   align-items: center;
-  font-size: 1.5rem; 
+  font-size: 2rem; 
   text-decoration: none;
   padding: 0 1rem; 
   height: 100%; 
   cursor: pointer; 
+  &:hover{
+    color: #4b4c4c
+  }
   
 `
 export const BarMenu = styled.div`

@@ -13,7 +13,6 @@ import Typography from '@material-ui/core/Typography';
 //Icons
 import { ImGithub } from 'react-icons/im';
 
-
 //Styled-components
 import styled from 'styled-components';
 

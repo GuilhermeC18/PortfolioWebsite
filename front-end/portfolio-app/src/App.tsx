@@ -14,10 +14,10 @@ import {
 } from 'react-router-dom';
 
 //Pages
-import Homepage from './pages/homepage';
+import Homepage from './pages/homepage/homepage';
 import {AboutMe} from './pages/about/about';
 import Contact from './pages/contact/contact';
-import ProjectsPage from './pages/projects';
+import ProjectsPage from './pages/projects/projects';
 import Login from './pages/login';
 import AdminDashboard from './pages/admin/adminDashboard';
 import ErrorBoundary from './pages/errorBoundary';

@@ -7,7 +7,7 @@ import { SidebarContainer,
      SidebarWrapper,
      SidebarLink,
      SidebarMenu,
-     SidebarStyle } from './sidebarElements';
+    } from './sidebarElements';
 
 export const Sidebar = ({ isOpen, toggle }) => {
     
@@ -19,12 +19,10 @@ export const Sidebar = ({ isOpen, toggle }) => {
             </Icon>
             <SidebarWrapper>
               <SidebarMenu >
-                
                 <SidebarLink onClick={toggle} to="/">Homepage</SidebarLink>
                 <SidebarLink onClick={toggle} to="/about">About</SidebarLink>
                 <SidebarLink onClick={toggle} to="/projects">Projects</SidebarLink>
-                <SidebarLink onClick={toggle} to="/Contact">Contact</SidebarLink>
-               
+                <SidebarLink onClick={toggle} to="/contact">Contact</SidebarLink>
                </SidebarMenu>
             </SidebarWrapper>
          </SidebarContainer>

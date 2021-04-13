@@ -1,7 +1,5 @@
-//Styled Components 
-import {
-        Background, 
-        StyledPage,
+//Styling Elements 
+import { 
         StyledImage,
         StyledBody,
         StyledForm,
@@ -15,9 +13,10 @@ import {
         ButtonWrapper,
         EmailWrapper,
         StyledLabel,
-        StyledButton,
-        StyledTitle
+        StyledButton
     } from './contactElements';
+
+import { Background, StyledPage, StyledTitle } from '../../utils/global';
 
 //Components 
 import { NavBar } from '../../components/navbar/navbar';

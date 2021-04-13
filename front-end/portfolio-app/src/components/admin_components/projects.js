@@ -43,19 +43,13 @@ export function AdminProjects(){
 
   }
 
-
-  
-  
-
-
-  console.log("project fetch", projects);
   return (
       <>
       <h2>Project List</h2>
       {error && <h1>{error}</h1>}
       <p>add project</p>
       <AddIcon />
-      {projects && projects?.map((project) => 
+      {projects?.map((project) => 
           <div key="projects.id">
             <StyledImg src={`/api/${project.images[0].image_link}`} alt="project"/>
           <Item>
@@ -66,8 +60,8 @@ export function AdminProjects(){
            <DeleteIcon onClick={()=>{
                onDelete(project.id);
            }} />
-           <EditIcon  />
-           {project.technologies.map((t, index) => <p key="t.id">{t.name}</p>)}
+             <EditIcon  />
+             {project?.technologies.map((t, index) => <p key="t.id">{t.name}</p>)}
            </Item>
            </div> 
         )}    

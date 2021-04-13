@@ -21,7 +21,9 @@ const path = require('path');
 
 //Image Upload
 const multer = require('multer');
-const upload = multer({ dest: 'uploads/'})
+const upload = multer({ dest: 'uploads/'});
+
+
 
 
 app.use(express.json());

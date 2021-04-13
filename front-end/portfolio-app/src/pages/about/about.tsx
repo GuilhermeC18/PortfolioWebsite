@@ -1,10 +1,7 @@
 import React from "react";
 
-//Styled Components 
-import {
-  Background, 
-  StyledPage, 
-  StyledTitle, 
+//Styled Elements
+import {  
   StyledBody, 
   StyledImage, 
   TextBlock, 
@@ -12,6 +9,8 @@ import {
   StyledText, 
   StyledLabel,
    } from './about-elements';
+
+import { StyledPage, StyledTitle, Background } from "../../utils/global";
 
 
 //Components 
@@ -21,7 +20,6 @@ import { Footer } from '../../components/footer';
 
 //Hooks 
 import { useState } from 'react';
-
 
 //Image
 import AboutImg from "../../assets/brutalism/About.jpg";
@@ -36,10 +34,9 @@ export function AboutMe() {
       <>
         <Background>
           <StyledPage>
-          
               <Sidebar isOpen={isOpen} toggle={toggle}/>
               <NavBar toggle={toggle} />
-              <StyledTitle>About me</StyledTitle>
+              <StyledTitle>About Me</StyledTitle>
               <StyledBody>
                 <ImageBlock>
                   <StyledImage src={AboutImg} alt="Brutalist Building" />
