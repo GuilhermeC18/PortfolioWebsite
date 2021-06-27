@@ -130,7 +130,7 @@ export const deleteTechnology: RequestHandler = async (req, res, next) =>{
   res.status(200).json(deletedTech);
  } catch (err) {
    next(err);
-}
+ }
 }
 
 
