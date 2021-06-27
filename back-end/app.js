@@ -25,13 +25,14 @@ app.use(cookieParser());
 app.use(morgan());
 app.use(mainRouter);
 app.use(express_1.default.static(path.join(__dirname, 'build')));
+app.use(errorHandlingMiddleware);
+app.listen(PORT, function () {
+    console.log("App is running on " + PORT);
+});
 app.get('/*', function (req, res) {
     res.sendFile(path.join(__dirname, 'build', 'index.html'));
 });
 app.use('*', function (req, res, next) {
     next(createError(404));
 });
-app.use(errorHandlingMiddleware);
-app.listen(PORT, function () {
-    console.log("App is running on " + PORT);
-});
+
