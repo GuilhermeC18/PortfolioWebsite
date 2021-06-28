@@ -53,14 +53,10 @@ const IconWrapper = styled.a`
 
   interface ProjectProps {
     Project: {
-               date: string; 
-               description: string; 
-               id: number; 
-               images: Images[];
-               link: string; 
-               name: string; 
-               technologies: Technologies[];
-              };
+             description: string; 
+             image: string;
+             name: string; 
+            };
     };
 
 const ImgMediaCard: React.FC<ProjectProps> = ({Project}) => {
@@ -72,7 +68,7 @@ const ImgMediaCard: React.FC<ProjectProps> = ({Project}) => {
           component="img"
           alt={Project.name}
           height="320"
-          image={`/api/${Project.images[0]?.image_link}`}
+          image={Project!.image}
           title={Project.name}
         />}
         <CardContent>

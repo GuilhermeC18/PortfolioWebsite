@@ -14,19 +14,24 @@ import { useState } from 'react';
 //Project page
 import ImgMediaCard from "../../components/project-page";
 
-interface ProjectsProps {
-  Projects: {
-             date: string; 
-             description: string; 
-             id: number; 
-             images: [];
-             link: string; 
-             name: string; 
-             technologies: [];
-            }[];
-  };
+//Images Project 
+import artscene from "../../assets/art-scene/art-scene.png";
+import filmchain from "../../assets/film-chain/FilmChain-Analytics.png";
 
-const ProjectsPage: React.FC<ProjectsProps> = ({Projects}) => {
+const Projects = [{
+  name: "ArtScene",
+  image: artscene,
+  description: "Application that allows the user to search for art exibitions near him in Berlin. It allows filtering by time available, price and genre. It displays the results on a map with the amount of time needed for to user to reach the exibition."
+}, 
+ {
+   name: "FilmChain Analytics",
+   image: filmchain,
+   description: "Analytics page for FilmChain's website. It displays a chart with different types of data about the performance of a movie. It allows the user to edit between different time-ranges and between cumulative value or individual transfers"
+ }];
+
+
+
+const ProjectsPage = () => {
   const [isOpen, setIsOpen] =useState(false);
   const toggle = () => {
     setIsOpen(!isOpen);
@@ -42,10 +47,11 @@ const ProjectsPage: React.FC<ProjectsProps> = ({Projects}) => {
           <StyledTitle>My Projects as a Web Developer</StyledTitle>
           
             <ProjectGrid>  
-            {Projects && Projects?.map((project) => 
-          <div key="projects.id">
-              <ImgMediaCard Project={project}/>
-          </div>   )}
+            {Projects && 
+            <>
+              <ImgMediaCard Project={Projects[0]}/>
+              <ImgMediaCard Project={Projects[1]}/>
+             </>}
             </ProjectGrid>
           <Footer />
         </StyledPage>

@@ -16,6 +16,8 @@ import { ImGithub } from 'react-icons/im';
 //Styled-components
 import styled from 'styled-components';
 
+//Images
+
 const useStyles = makeStyles({
   root: {
     maxWidth: 650,
@@ -51,13 +53,9 @@ projects: [];
 
 interface ProjectProps {
 Project: {
-         date: string; 
          description: string; 
-         id: number; 
-         images: Images[];
-         link: string; 
+         image: string;
          name: string; 
-         technologies: Technologies[];
         };
 };
 
@@ -73,7 +71,7 @@ const ImgMediaCard: React.FC<ProjectProps> = ({Project})  => {
           component="img"
           alt={Project?.name}
           height="360"
-          image={`/api/${Project?.images[0]?.image_link}`}
+          image={Project?.image}
           title={Project?.name}
         />
         <CardContent>

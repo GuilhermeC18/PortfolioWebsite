@@ -44,7 +44,7 @@ interface ProjectsProps {
           <StyledHomeTitle>Guilherme Caeiro</StyledHomeTitle>
           <AboutMePreview/>
         </FirstScreen>
-        <PortfolioPreview Projects={Projects} />
+        <PortfolioPreview />
         <Footer />
       </StyledPage>
     </Background>

@@ -52,7 +52,7 @@ export const App:React.FC = () => {
             <AboutMe />
           </Route>
           <Route exact path='/projects'>
-            <ProjectsPage Projects={Projects} />
+            <ProjectsPage />
           </Route>
           <Route exact path='/contact'>
             <Contact />

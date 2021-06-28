@@ -16,6 +16,21 @@ import ImgMediaCard from './project-card';
 //Styled Elements 
 import { StyledLink, StyledTitle } from "../../utils/global";
 
+//Images Project 
+import artscene from "../../assets/art-scene/art-scene.png";
+import filmchain from "../../assets/film-chain/FilmChain-Analytics.png";
+
+const Projects = [{
+  name: "ArtScene",
+  image: artscene,
+  description: "Application that allows the user to search for art exibitions near him in Berlin. It allows filtering by time available, price and genre. It displays the results on a map with the amount of time needed for to user to reach the exibition."
+}, 
+ {
+   name: "FilmChain Analytics",
+   image: filmchain,
+   description: "Analytics page for FilmChain's website. It displays a chart with different types of data about the performance of a movie. It allows the user to edit between different time-ranges and between cumulative value or individual transfers"
+ }];
+
 const TextBox = styled.div`
   display: flex;
   flex-direction: column;
@@ -44,7 +59,7 @@ interface ProjectsProps {
             }[];
   };
 
-const PortfolioPreview: React.FC<ProjectsProps> = ({Projects}) => {
+const PortfolioPreview = () => {
     const { error, projectsByTech, onFindProjectByTech} = useProjectsByTech();
     return (
       <> 

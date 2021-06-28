@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "./static/css/main.11091008.chunk.css",
-    "main.js": "./static/js/main.3efb79e0.chunk.js",
-    "main.js.map": "./static/js/main.3efb79e0.chunk.js.map",
+    "main.js": "./static/js/main.f4776c67.chunk.js",
+    "main.js.map": "./static/js/main.f4776c67.chunk.js.map",
     "runtime-main.js": "./static/js/runtime-main.b91ac4ba.js",
     "runtime-main.js.map": "./static/js/runtime-main.b91ac4ba.js.map",
     "static/js/2.d6f82cce.chunk.js": "./static/js/2.d6f82cce.chunk.js",
@@ -14,12 +14,14 @@
     "static/js/2.d6f82cce.chunk.js.LICENSE.txt": "./static/js/2.d6f82cce.chunk.js.LICENSE.txt",
     "static/media/About.f609fa52.jpg": "./static/media/About.f609fa52.jpg",
     "static/media/Contact.46c51013.jpg": "./static/media/Contact.46c51013.jpg",
+    "static/media/FilmChain-Analytics.6ae01454.png": "./static/media/FilmChain-Analytics.6ae01454.png",
+    "static/media/art-scene.180be829.png": "./static/media/art-scene.180be829.png",
     "static/media/noise.c163b047.png": "./static/media/noise.c163b047.png"
   },
   "entrypoints": [
     "static/js/runtime-main.b91ac4ba.js",
     "static/js/2.d6f82cce.chunk.js",
     "static/css/main.11091008.chunk.css",
-    "static/js/main.3efb79e0.chunk.js"
+    "static/js/main.f4776c67.chunk.js"
   ]
 }
